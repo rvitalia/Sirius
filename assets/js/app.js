@@ -1,0 +1,1 @@
+window.onload=function(){ymaps.ready(function(){var n=new ymaps.Map("mapsmain",{center:[55.73404,37.432367],zoom:18}),a=new ymaps.Placemark([55.73404,37.432367],{balloonContent:"Молодогвардейская улица, 10"},{preset:"islands#redIcon",openBalloon:!0});n.geoObjects.add(a)})};
