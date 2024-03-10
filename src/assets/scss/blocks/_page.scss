@@ -1,0 +1,12 @@
+.page{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.page *{
+    font-family: var(--font-family);
+    color: var(--light-color);
+    font-weight: 600;
+}

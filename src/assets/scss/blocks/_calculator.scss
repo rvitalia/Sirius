@@ -1,0 +1,138 @@
+.calculator {
+    padding: 120px 0;
+    @include bg-cover;
+
+    @include for-burger{
+        padding: 75px 0;
+    }
+
+    @include small-tablet{
+        padding: 45px 0;
+    }
+}
+
+.calculator__inner {
+    display: grid;
+    grid-template-columns: auto 800px;
+    align-items: center;
+
+    @include for-burger{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 30px;
+    }
+}
+
+.calculator__inner__item {
+
+    @include for-burger{
+        width: 100%;
+    }
+
+    &:last-child {
+        padding: 55px 65px;
+        border-radius: 15px;
+        background: rgba(0, 0, 0, 0.20);
+
+        @include mobile{
+            padding: 25px;
+        }
+    }
+
+    & form .flex {
+        display: flex;
+        align-items: center;
+        column-gap: 23px;
+        padding-bottom: 55px;
+
+        @include mobile{
+            padding-bottom: 30px;
+        }
+    }
+}
+
+.calculator__inner__item__subtitle {
+    display: block;
+    padding-bottom: 11px;
+    color: var(--accent-color);
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 92.308%;
+
+    @include mobile{
+        font-size: 22px;
+    }
+}
+
+.calculator__inner__item__title {
+    font-weight: 800;
+    line-height: 120%;
+    text-transform: uppercase;
+    padding-bottom: 13px;
+}
+
+.calculator__inner__item__desc {
+    color: #D6D6D6;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.calculator__inner__item__price {
+    display: block;
+    color: var(--accent-color);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.calculator__inner__item__label {
+    display: block;
+    color: #D6D6D6;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 115%;
+    padding-bottom: 20px;
+
+    @include mobile{
+        font-size: 18px;
+    }
+}
+
+.calculator__inner__item__range {
+    width: 100%;
+    max-width: 595px;
+    height: 5px;
+}
+
+#output {
+    color: #D6D6D6;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 95.833%;
+
+    @include mobile{
+        font-size: 20px;
+    }
+}
+
+.calculator__inner__item__delivery {
+    color: #D6D6D6;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 153.333%;
+
+    &+& {
+        margin-top: 10px;
+        margin-bottom: 21px;
+    }
+
+    & strong {
+        font-size: 20px;
+
+        @include mobile{
+            font-size: 18px;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.title {
+    padding: 200px 0 80px;
+    @include bg-cover;
+
+    @include tablet {
+        padding: 150px 0 60px;
+    }
+
+    @include mobile{
+        padding: 120px 0 45px;
+    }
+}
+
+.title__inner {
+    color: var(--light-color);
+    font-family: var(--font-family);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%;
+    text-transform: uppercase;
+
+    @include mobile{
+        font-size: 45px;
+    }
+}

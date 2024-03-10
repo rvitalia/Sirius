@@ -1,0 +1,118 @@
+.contacts {
+    padding: 84px 0;
+
+    @include small-tablet{
+        padding: 45px 0;
+    }
+}
+
+.contacts__inner {
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        align-items: flex-start;
+    }
+}
+
+.contacts__inner__item {
+    
+    @include tablet{
+        width: 100%;
+    }
+
+    & form {
+       display: flex;
+        column-gap: 10px;
+        
+
+        @include mobile{
+            flex-direction: column-reverse;
+            row-gap: 10px;
+        }
+
+        & .contacts__flex{
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            width: 100%;
+        }
+
+        & .contacts__inner__inputs {
+            color: #555;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 150%;
+            padding: 13px 25px;
+
+            @include mobile{
+                font-size: 13px;
+                padding: 10px 15px;
+                border-radius: 4px;
+            }
+        }
+
+        & .contacts__inner__textarea {
+    
+            width: 100%;
+
+            @include mobile{
+                min-height: 90px;
+                font-size: 13px;
+                padding-left: 15px;
+                border-radius: 4px;
+            }
+        }
+
+        & input[type='submit']{
+            @include mobile{
+                order: 1;
+            }
+        }
+    }
+}
+
+.contacts__inner__item__subtitle {
+    margin-bottom: 11px;
+}
+
+
+.contacts__inner__item__title {
+    max-width: 325px;
+    font-weight: 800;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.contacts__inner__item__tel {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 100%;
+    margin-bottom: 7px;
+}
+
+.contacts__inner__item__mail {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    margin-bottom: 30px;
+}
+
+.contacts__inner__textarea {
+    color: #555;
+    font-size: 16px;
+    line-height: 150%;
+    padding: 13px 25px;
+}
+
+.mapsmain {
+    min-height: 434px;
+    width: 100%;
+
+    @include tablet{
+        width: calc(100vw - 30px);
+    }
+}

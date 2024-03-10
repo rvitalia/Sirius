@@ -1,0 +1,30 @@
+.tech {
+    @include bg-cover;
+    padding: 95px 0;
+
+    @include small-tablet{
+        padding: 45px 0;
+    }
+}
+
+.tech__inner {
+    column-gap: 25px;
+}
+
+.tech__inner__item {}
+
+.tech__inner__item__subtitle {}
+
+
+.tech__inner__item__title {
+    letter-spacing: -1.9px;  
+}
+
+
+.tech__inner__item__text {
+    margin-bottom: 15px;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+}

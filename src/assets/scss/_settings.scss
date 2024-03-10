@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+img {
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+  }
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .btn-reset {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .list-reset {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .background-center{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .h-reset{
+    margin: 0;
+  }
+  .btn-red{
+    border-radius: 5px;
+    background: var(--accent-color);
+    text-align: center;
+    font-weight: 600;
+    // line-height: 150%;
+    color: var(--light-color);
+    border: none;
+    padding: 13px 27px;
+    font-size: 16px;
+    transition:  background 0.3s linear;
+    cursor: pointer;
+
+    &:hover{
+      background: darken($color: #FE4646, $amount: 10%);
+    }
+
+    @include mobile{
+      font-size: 13px;
+      padding: 10px 17px;
+    }
+  }
+
+  .project-title{
+    font-size: clamp(30px, 4vw, 45px);
+  }
+
+  .about p{
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+}
+.about p+p{
+    margin-top: 21px;
+    margin-bottom: 30px;
+}
+
+.delivery__inner__item p{
+    margin: 0;
+    margin-top: 10px;
+    text-align: center;
+    color: #d6d6d6;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 153.333%;
+}
+.benefits__inner__item p{
+    text-align: center;
+    color: #d6d6d6;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 153.333%;
+    padding-top: 8px;
+    margin: 0;
+}
+.calculator__inner .flex .wpcf7-form-control-wrap{
+    width: 100%;
+}
+.text p{
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.text p + p{
+    margin-top: 28px;
+}
+.blog__inner__item p{
+    margin: 0;
+    color: #b3b3b3;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 153.333%;
+    padding-bottom: 18px;
+    flex-grow: 1;
+}
+
+.blog__inner__item{
+    display: flex;
+    flex-direction: column;
+}

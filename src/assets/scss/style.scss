@@ -1,0 +1,76 @@
+// @import 'vendor/reset';
+@import 'blocks/vars';
+@import 'mixins';
+// @import "./vendor/animate";
+
+
+@import 'fonts';
+@import 'settings';
+
+
+html,body{
+  height: 100%;
+  scroll-behavior: smooth;
+  //  background-color: #543fab;
+   color: white;
+   margin: 0;
+}
+
+.main{
+  height: 100%;
+  flex: 1 0 auto; 
+}
+
+/* Работает в Chrome, Edge и Safari */
+// *::-webkit-scrollbar {
+//     width: 3px;
+//   }
+  
+//   *::-webkit-scrollbar-track {
+//     background: rgba(20, 16, 36, 0.08);
+//     border-radius: 40px;
+//   }
+  
+//   *::-webkit-scrollbar-thumb {
+//     background-color: #141024;
+//     border-radius: 40px;
+//     // border: 3px solid orange;
+//   }
+// =============scrollbar=============
+
+._lock{
+  overflow: hidden;
+}
+
+// ======blocks=========
+
+@import 'blocks/container';
+@import 'blocks/page';
+@import 'blocks/header';
+@import 'blocks/footer';
+@import 'blocks/hero';
+@import 'blocks/quality';
+@import 'blocks/work';
+@import 'blocks/services';
+@import 'blocks/about';
+@import 'blocks/contacts';
+@import 'blocks/tech';
+@import 'blocks/delivery';
+@import 'blocks/text';
+@import 'blocks/delivery-hero';
+@import 'blocks/benefits';
+@import 'blocks/calculator';
+@import 'blocks/gasstation';
+@import 'blocks/station';
+@import 'blocks/price';
+@import 'blocks/title';
+@import 'blocks/blog';
+@import 'blocks/connection';
+@import 'blocks/data';
+
+
+
+
+
+
+

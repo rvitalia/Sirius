@@ -1,0 +1,23 @@
+.gasstation {
+    padding: 95px 0;
+
+    @include small-tablet {
+        padding: 45px 0;
+    }
+}
+
+.gasstation__inner {
+    & .quality__inner__item:last-child {
+        @include tablet {
+            order: 2;
+        }
+    }
+}
+
+.gasstation__inner__item__text {
+    margin-bottom: 17px;
+
+    &+& {
+        margin-bottom: 45px;
+    }
+}

@@ -1,0 +1,29 @@
+.delivery-hero__inner__item{
+    &:last-child{
+        margin-left: auto;
+
+        @include small-tablet{
+            display: none;
+        }
+    }
+  
+    & form{
+        display: flex;
+        column-gap: 12px;
+    }
+}
+
+.delivery-hero__inner{
+    width: 100%;
+
+    @include small-tablet{
+        display: block;
+    }
+}
+.delivery-hero__item__subtitle{
+    max-width: 538px;
+
+    @include small-tablet{
+        font-size: 14px;
+    }
+}
